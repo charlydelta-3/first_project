@@ -1,0 +1,99 @@
+form {
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #00008B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: indigo;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:40px;
+    margin-left:10%;
+    opacity:0.9;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+  }
+  .information{
+    display: flex;
+    justify-content: center;
+  }
+  .link{
+     /* Définissez la couleur de fond transparente */
+     background-color: transparent;
+     margin-top: 10px;
+     font-weight: bold;
+     margin-right: 10px;
+     border:none;
+     
+  }
+  .link:hover {
+    background-color: #00008B; /* couleur verte */
+    color: white;
+    border-radius:10px;
+  }
+  /* Le code CSS pour styliser un sélecteur */
+select {
+    /* Définissez la taille de la police */
+    font-size: 18px;
+  
+    /* Définissez la couleur du texte */
+    color: #000000; /* couleur noire */
+  
+    /* Définissez la couleur de fond */
+    background-color: #FFFFFF; /* couleur blanche */
+  
+    /* Ajoutez une bordure autour du sélecteur */
+    border: 1px solid #000000; /* bordure noire solide */
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .cita{
+    width: 100%;  
+  }

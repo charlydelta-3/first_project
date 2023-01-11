@@ -1,0 +1,24 @@
+<div class="contenu" >
+
+  <div class="flip-card"  *ngFor="let tutorial of citations; ">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">{{tutorial.auteur}}</p>
+            <p>VOIR DESCRIPTION</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title">{{tutorial.libelle}}</p><br>
+          <div class="bt">
+            <button class="btn" [routerLink]="['/auteurs',tutorial.num]">
+              VOIR  CITATIONS
+            </button>
+          </div>  
+         
+        </div>
+        
+    </div>
+  </div>
+</div> 
+
+
+

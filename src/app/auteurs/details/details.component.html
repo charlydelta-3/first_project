@@ -1,0 +1,19 @@
+
+    <div class="card text-center" *ngFor="let i  of numbers ;" >
+        <div class="card-header">
+          <span>citation {{i+1}}</span>
+        </div>
+        <div class="card-body" >
+          <h5 class="card-title"></h5>
+          <p class="card-text">{{details?.libelle[i]}}</p>
+          <div  >
+          <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="like()" >
+            <mat-icon>favorite</mat-icon>
+          </button>  <p>{{ likeCount }} likes</p></div>
+        </div>
+        <div class="card-footer text-muted">
+          {{details?.auteur}}
+        </div>
+    </div><br><br>
+
+

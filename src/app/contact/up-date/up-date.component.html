@@ -1,0 +1,29 @@
+<div style="text-align: center;" class="container" *ngIf="!submitted">
+ 
+    <form (ngSubmit)="updateUser()" >
+      <label>Citation:</label><br>
+      <textarea class="cita"
+      required
+      ngModel required
+      name="citation"
+      [(ngModel)]="citation"
+      ></textarea><br>
+      <label>Auteur :</label><br>
+      <input type="text" maxlength="15" class="input"  id="auteur"
+      required
+      ngModel required
+      name="auteur"
+      [(ngModel)]="auteur"> <br><br>
+    
+      <div>
+      
+      <input type="submit" value="Soumettre"  ><br>
+      </div> 
+     
+    </form>
+  </div>
+  <div *ngIf="submitted">
+    <h5>Modification effectuée</h5>
+    <button class="btn btn-success" [routerLink]="['/propositions']">SUPER</button>
+  </div>
+

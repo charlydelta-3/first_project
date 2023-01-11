@@ -1,0 +1,17 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="header">
+  <mat-toolbar color="primary" class="toolbar" >
+   <span><mat-icon>eco</mat-icon> CITATIONS</span>
+
+   <div class="spacer"></div>
+    <button mat-button [routerLinkActive]="'active'"><a  [routerLink]="['accueil']" >ACCUEIL</a></button>
+    <button mat-button [routerLinkActive]="'active'"><a  [routerLink]="['auteurs']" >AUTEURS</a></button>
+    <button mat-button [routerLinkActive]="'active'" ><a  [routerLink]="['propositions']" >VOS PROPOSITIONS</a></button>
+    <div class="spacer2"></div>
+    <button mat-raised-button color="white" class="connexion"  [routerLink]="['inscription']">PROPOSITIONS  </button>
+  </mat-toolbar>
+  
+</div> 
+<div>
+  <router-outlet></router-outlet>
+</div>

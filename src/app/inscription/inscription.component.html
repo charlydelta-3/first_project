@@ -1,0 +1,38 @@
+<div class="information">
+<h4><mat-icon>info</mat-icon><u> AVANT  DE PROPOSER DES CITATIONS VOUS DEVEZ ÊTRE IDENTIFIES !</u> </h4>
+</div>
+<div style="text-align: center;" class="container">
+ 
+  <form>
+    <label>Nom :</label><br>
+    <input type="text" maxlength="15" class="input"  id="Nom"
+    required
+    ngModel required
+    name="nom_user"
+    [(ngModel)]="Register.nom_user"><br>
+    <label>Prenom :</label><br>
+    <input  type="text" maxlength="15" class="input"  id="Prenom"
+    required
+    ngModel required
+    name="pnom_user"
+    [(ngModel)]="Register.pnom_user"><br>
+    <label>Nom d'utilisateur:</label><br>
+    <input type="text" maxlength="15" class="input"  id="username"
+    required
+    ngModel required
+    name="username"
+    placeholder="EX:Charly_5936"
+    [(ngModel)]="Register.username"><br><br>
+    
+    <input type="submit" value="Soumettre" (click)="SendData()" (click)="Information()"><br>
+    <div *ngIf="submitted">
+      <h4>Enregistrement effectué avec succès!</h4>
+      <button class="btn btn-success" (click)="newTutorial()">Autre</button>
+    </div>
+    <div *ngIf="!verif">
+      <h5>Certains champs sont vides!</h5>
+      <button class="btn btn-success" (click)="ok()">Compris</button>
+    </div>
+    <button [routerLink]="['/login']" class="link">J'AI DEJA UN COMPTE</button> 
+  </form>
+</div>

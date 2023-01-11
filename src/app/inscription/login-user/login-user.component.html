@@ -1,0 +1,47 @@
+<div style="text-align: center;" class="container">
+ 
+    <form >
+      
+      
+    <mat-form-field appearance="fill">
+        <mat-label>USERNAME</mat-label>
+        <mat-select [(ngModel)]="Register.username" name="username" >
+          <mat-option value="{{utili.username}}"  *ngFor="let utili of users " >{{utili.username}}</mat-option>
+        </mat-select>
+        
+      </mat-form-field><br>
+     
+      <label>Citation:</label><br>
+      <textarea class="cita"
+      required
+      ngModel required
+      name="citation"
+      [(ngModel)]="Register.citation"
+      ></textarea><br>
+      <label>Auteur :</label><br>
+      <input type="text" maxlength="15" class="input"  id="username"
+      required
+      ngModel required
+      name="auteur"
+        [(ngModel)]="Register.auteur"
+    > <br><br>
+    <input type="hidden"   id="like"
+      
+      name="like"
+        [(ngModel)]="Register.like"
+    > <br><br>
+      
+      <input type="submit" value="Soumettre" (click)="SendData()" (click)="Information()"><br>
+      <div *ngIf="submitted">
+        <h4>Enregistrement effectué avec succès!</h4>
+        <button class="btn btn-success" (click)="newTutorial()">Autre</button>
+      </div>
+      <div *ngIf="!verif">
+        <h5>Certains champs sont vides!</h5>
+        <button class="btn btn-success" (click)="ok()">Compris</button>
+      </div>
+      
+      <button  class="link" [routerLink]="['/inscription']">pas encore de compte</button> 
+    </form>
+  </div>
+

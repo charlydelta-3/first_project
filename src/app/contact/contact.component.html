@@ -1,0 +1,21 @@
+
+<div class="card text-center"  *ngFor="let ins of login;">
+  <div class="card-header">
+    <span>Proposition de: {{ins.username}}</span>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{ins.citation}}</p>
+   
+  </div>
+  <div class="card-footer text-muted">
+    Auteur:{{ins.auteur}}
+    <div  >
+      <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="likes(ins)" >
+        <mat-icon>favorite</mat-icon>
+      </button> {{ins.like}} LIKES </div>
+      <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" [routerLink]="['/propositions',ins._id]">
+        <mat-icon>create</mat-icon>
+      </button>
+  </div>
+</div><br><br>

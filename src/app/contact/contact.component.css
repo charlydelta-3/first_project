@@ -1,0 +1,25 @@
+.card{
+    margin:40px;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
+}
+.card-header{
+    background-color:#00008B;
+
+}
+.card-footer{
+    border-radius: 30px;
+}
+.card-text{
+    color:black;
+    font-family: Georgia, serif;
+    text-shadow: 1px 1px 2px pink;
+    font-size:20px;
+}
+span{
+    color:white;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:25px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+}
