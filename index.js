@@ -14,7 +14,7 @@ var corsOptions = {
   
 
 // Connexion à la base de données MongoDB
-mongoose.connect("mongodb+srv://Charly:Charlydelta3@cluster0.bzslqds.mongodb.net/citation_db?retryWrites=true&w=majority")
+mongoose.connect("lien de connexion à votre base de données")
 
 // Configuration de body-parser pour traiter les requêtes entrantes
 app.use(bodyParser.json())
