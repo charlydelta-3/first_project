@@ -12,7 +12,7 @@ var corsOptions = {
   
   app.use(cors(corsOptions));
   
-
+mongoose.set('strictQuery', true);
 // Connexion à la base de données MongoDB
 mongoose.connect("mongodb+srv://Charly:Charlydelta3@cluster0.bzslqds.mongodb.net/citation_db?retryWrites=true&w=majority")
 
