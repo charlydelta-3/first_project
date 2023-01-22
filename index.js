@@ -7,7 +7,7 @@ const cors = require("cors");
 const { ObjectId } = require('mongodb');
 
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: ["http://localhost:8081","https://citation-host.web.app"]
   };
   
   app.use(cors(corsOptions));
