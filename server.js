@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: ["http://localhost:8081","https://citation-host.web.app"]
+  origin: ["http://localhost:8081","https://citation-host.web.app","https://auteur-1.onrender.com"]
 };
 
 app.use(cors(corsOptions));
